@@ -1,0 +1,14 @@
+.container {
+    width: 100%;
+    padding: 1%;
+    padding-bottom: 0%;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    grid-template-columns: 20% 80%;
+    display: grid;
+}
+.container1 th{
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    width: 10%;
+}
