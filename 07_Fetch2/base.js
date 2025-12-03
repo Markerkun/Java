@@ -15,14 +15,10 @@ async function SomeNewF(){
      fetch (url)
      .then (response => response.json())
      .then (data => {img.src = data.message})
-     .catch(error => (console.log (error)));  
-    
-    const imageUrl = data.message;
-    img.src = imageUrl;
+     .catch(error => (console.log (error)));
 
     const parts = imageUrl.split("/");
     const breedPart = parts[parts.indexOf("breeds") + 1];
-
     const breed = breedPart.replace("-", " ");
 
     p.textContent = "Breed: " + breed;
