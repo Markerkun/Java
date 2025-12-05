@@ -1,7 +1,37 @@
 .container{
+    display: flex;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-left: 15%;
     margin-right: 15%;
-    grid-template-columns: 1fr, 5fr;
+    margin-top: 50px;
+    padding: 0%;
+}
+.text-area{
+    border-color: dodgerblue;
+    border: 5px solid dodgerblue;
+    border-left: 0cm;
+    padding: 0px;
+}
+.panel{
+    display: flex;
+    flex-direction: column;
+    background-color: dodgerblue;
+}
+p{
+    font-size: 20px;
+    margin: 20px;}
+
+button{
+    background-color: dodgerblue;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+    color: white ;
+    cursor: pointer;
+    border: none;
+}
+button:hover{
+    background-color: deepskyblue;
 }
