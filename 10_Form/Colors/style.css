@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 50px;
+    padding: 0%;    
+}
+
+.buttons-panel{
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+}
+#number-display{
+    display: block;
+    border: 5px solid dodgerblue;
+    border-right: 0cm;
+    padding: 20px;
+    font-size: 24px;
+    width: 150px;
+    text-align: center;
+}
+
+.img{
+    width: auto;
+    height: 100px;
+    margin-top: 20px;
+}
+
+
+.Color-div{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border: 1px solid black;
+}
