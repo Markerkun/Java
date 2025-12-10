@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework</title>
+    <link rel="stylesheet" href="C:\Users\DEV\Desktop\Java\09_BOM\CSS\bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <form class="container">
+        <h3>Create new color</h3>
+
+        <p>Color name:</p>
+        <input type="text" id="Name"></input>
+
+        <p>Type</p>
+        <select id="Type">
+            <option value="RGB">RGB</option>
+            <option value="RGBA">RGBA</option>
+            <option value="HEX">HEX</option>
+        </select>
+
+        <p>Code:</p>
+        <input type="text" id="Code"></input>
+
+        <button onclick="AddColor()" >Add color</button>
+    </form>
+
+    <ul id="Colors">
+        <h3>All your colors</h3>
+    </ul>
+
+
+
+
+<script src="./base.js" defer></script>
+</body>
+</html>
