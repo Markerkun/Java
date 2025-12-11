@@ -1,28 +1,23 @@
+const getAdvice = document.getElementById("wordInput");
 
+getAdvice.addEventListener("click", async () => {
+    const word = document.getElementById("wordInput").value.trim();
+    const res = document.getElementById("result");
 
+    if (!word) {
+        res.textContent = "Enter a word";
+        return;
+    }
 
-async function SomeNewF(){
-    const url = "https://api.adviceslip.com/advice/search/advice";
-    
-    
-    fetch (url)
-    .then (response => response.json())
-    .then (data => {console.log (data)})
-    .catch(error => (console.log (error)));
+    const url = `https://api.adviceslip.com/advice/search/${word}`;
 
-    
-    // const p = document.getElementById("p");
-    // const img = document.getElementById("DogImg");
-    // img.hidden = false;
+    const response = await fetch(url);
+    const data = await response.json();
 
-    // const parts = imageUrl.split("/");
-    // const breedPart = parts[parts.indexOf("breeds") + 1];
-    // const breed = breedPart.replace("-", " ");
+    if (!data.slips) {
+        res.textContent = "No advice found.";
+        return;
+    }
+    res.textContent = data.slips[0].advice;
 
-    // p.textContent = "Breed: " + breed;
-
-
-    
-        
-
-}
+});
