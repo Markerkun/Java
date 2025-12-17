@@ -2,6 +2,14 @@
 
 function AddColor()
 {
+    event.preventDefault(); 
+
+    const form = event.target;
+
+    const formData = new FormData(form);
+    const values = Object.fromEntries(formData.entries());
+
+    
     const Name = document.getElementById("Name").value;
     const Type = document.GetValue("Type").value;
     const Code = document.getElementById("Code").value;

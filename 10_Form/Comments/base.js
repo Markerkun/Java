@@ -1,13 +1,25 @@
-const up = document.getElementById('up');
-const down = document.getElementById('down');
-const DivNum = document.getElementById('number');
-let num = 0;
 
-up.addEventListener('click', () => {
-    num++;
-    DivNum.innerText = num;
-});
-down.addEventListener('click', () => {
-    num--;
-    DivNum.innerText = num;
-});
+
+function AddComment(event){
+    event.preventDefault();
+
+    const Comments = document.getElementById("ListOfCommments");
+
+    const form = event.target;
+    const Name = form["nameInput"].value;
+    const Context = form["TextArea"].value;
+
+
+    Comments.innerHTML += 
+    `<div>
+        <p>
+            Hi, I'm ${Name}.
+            ${Context}
+            ${new Date()}
+        </p>
+    </div>`
+
+
+
+
+}
