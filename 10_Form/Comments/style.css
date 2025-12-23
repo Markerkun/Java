@@ -1,7 +1,12 @@
-.Div-With-Comments {
+.container {
     width:500px;
     height:fit-content;
-    margin-top: 20px;
+    margin: auto;
     border-top: 2px solid #ccc;
     padding-top: 10px;
+}
+.inputs{
+    display: flex;
+    position:fixed;
+    bottom: 0;
 }
