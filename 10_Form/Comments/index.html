@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Homework</title>
-    <link rel="stylesheet" href="C:\Users\DEV\Desktop\Java\Java-1\09_BOM\CSS\bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Comments</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
-    <div class="container">
-        <line></line>
-    <div>
-        <input type="text" id="nameInput" placeholder="Enter your name" ></input>
-        <textarea style="width: 400px;" placeholder="Your comment"></textarea>
-    </div>
-    </div>
-<script src="./base.js" defer></script>
+    <ul id="messages"></ul>
+
+    <h3>Add comment</h3>
+    <form id="messageForm">
+        <input type="text" id="author" placeholder="Ваше ім'я" required><br><br>
+        <textarea id="text" placeholder="Повідомлення" required></textarea><br><br>
+        <button type="submit">Add</button>
+    </form>
+
+    <script src="./base.js" defer></script>
+
 </body>
 </html>

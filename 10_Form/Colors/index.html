@@ -1,29 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Homework</title>
-    <link rel="stylesheet" href="C:\Users\DEV\Desktop\Java\09_BOM\CSS\bootstrap.css">
+    <title>Палітра кольорів</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
-    <div class="container">
-        
-        <div onclick="ColorChange(event)" style="background-color:black" class="Color-div"></div>
-        <div onclick="ColorChange(event)" style="background-color:white" class="Color-div"></div>
-        <div onclick="ColorChange(event)" style="background-color:red" class="Color-div"></div>
-        <div onclick="ColorChange(event)" style="background-color:blue" class="Color-div"></div>
-        <div onclick="ColorChange(event)" style="background-color:green" class="Color-div"></div>
-        
+
+    <div class="controls">
+        R <input type="number" id="r" value="255">
+        G <input type="number" id="g" value="99">
+        B <input type="number" id="b" value="71">
+        <button onclick="addColor()">Add color</button>
     </div>
-    <p id="text">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, reiciendis sed id ea non omnis sint neque fugiat corporis voluptates nobis dolor, veritatis velit exercitationem laborum
-    </p>
 
+    <div id="error" class="error"></div>
 
+    <div class="palette" id="palette"></div>
 
+    <script src="./base.js" defer></script>
 
-<script src="./base.js" defer></script>
 </body>
 </html>

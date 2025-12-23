@@ -1,29 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Homework</title>
-    <link rel="stylesheet" href="C:\Users\DEV\Desktop\Java\09_BOM\CSS\bootstrap.css">
-    <link rel="stylesheet" href="./style.css">
+    <title>Registration</title>
 </head>
 <body>
-    
-    <div class="container">
-        
-        <div onclick="ColorChange(event)" style="background-color:black" class="Color-div"></div>
-        <div onclick="ColorChange(event)" style="background-color:white" class="Color-div"></div>
-        <div onclick="ColorChange(event)" style="background-color:red" class="Color-div"></div>
-        <div onclick="ColorChange(event)" style="background-color:blue" class="Color-div"></div>
-        <div onclick="ColorChange(event)" style="background-color:green" class="Color-div"></div>
-        
-    </div>
-    <p id="text">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, reiciendis sed id ea non omnis sint neque fugiat corporis voluptates nobis dolor, veritatis velit exercitationem laborum
-    </p>
+    <h2>User registration</h2>
 
+    <form id="regForm">
+        <input type="email" id="email" placeholder="Пошта"><br><br>
+        <input type="text" id="login" placeholder="Логін"><br><br>
+        <input type="password" id="pass1" placeholder="Пароль"><br><br>
+        <input type="password" id="pass2" placeholder="Повторіть пароль"><br><br>
+        <button type="submit">Sing in</button>
+    </form>
 
+    <p id="result"></p>
 
-
-<script src="./base.js" defer></script>
+    <script src="./base.js" defer></script>
 </body>
 </html>
