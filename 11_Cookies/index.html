@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Homework</title>
-    <link rel="stylesheet" href="C:\Users\DEV\Desktop\Java\09_BOM\CSS\bootstrap.css">
-    <link rel="stylesheet" href="./style.css">
+<meta charset="UTF-8">
+<title>Colors</title>
+<link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
-    <form class="container">
-        <h3>Create new color</h3>
 
-        <p>Color name:</p>
-        <input type="text" id="Name"></input>
+<h2>Create new color</h2>
 
-        <p>Type</p>
-        <select id="Type">
-            <option value="RGB">RGB</option>
-            <option value="RGBA">RGBA</option>
-            <option value="HEX">HEX</option>
-        </select>
+<div class="form-box">
+    <label>Color:</label>
+    <input type="text" id="colorName" placeholder="powderblue">
 
-        <p>Code:</p>
-        <input type="text" id="Code"></input>
+    <label>Type:</label>
+    <select id="colorType">
+        <option>RGB</option>
+        <option>RGBA</option>
+        <option>HEX</option>
+    </select>
 
-        <button onclick="AddColor()" >Add color</button>
-    </form>
+    <label>Code:</label>
+    <input type="text" id="colorCode">
 
-    <ul id="Colors">
-        <h3>All your colors</h3>
-    </ul>
+    <button onclick="addColor()">Save</button>
+</div>
 
+<h2>All colors</h2>
 
-
+<div class="colors" id="colorsContainer"></div>
 
 <script src="./base.js" defer></script>
+
 </body>
 </html>
