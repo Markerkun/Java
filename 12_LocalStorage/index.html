@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Information Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <h2>User Form</h2>
+      
+        <form id="userForm">
+          <div class="row">
+            <div class="field">
+              <label>Firstname:</label>
+              <input type="text" id="firstname" required>
+            </div>
+            <div class="field">
+              <label>Lastname:</label>
+              <input type="text" id="lastname" required>
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="field">
+              <label>Birthday:</label>
+              <input type="date" id="birthday" required>
+            </div>
+            <div class="field">
+              <label>Gender:</label>
+              <div class="inline">
+                <label><input type="radio" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+              </div>
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="field">
+              <label>Country:</label>
+              <select id="country" required>
+                <option value="">Select</option>
+                <option>Canada</option>
+                <option>USA</option>
+                <option>Germany</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>City:</label>
+              <select id="city" required>
+                <option value="">Select</option>
+                <option>Toronto</option>
+                <option>New York</option>
+                <option>Berlin</option>
+              </select>
+            </div>
+          </div>
+      
+          <div class="field">
+            <label>Skills:</label>
+            <div class="skills">
+              <label><input type="checkbox" value="HTML"> HTML</label>
+              <label><input type="checkbox" value="CSS"> CSS</label>
+              <label><input type="checkbox" value="JS"> JS</label>
+              <label><input type="checkbox" value="PHP"> PHP</label>
+              <label><input type="checkbox" value="C++"> C++</label>
+              <label><input type="checkbox" value="JAVA"> JAVA</label>
+              <label><input type="checkbox" value="C#"> C#</label>
+            </div>
+          </div>
+      
+          <button type="submit">Save</button>
+        </form>
+      
+        <h2>Result:</h2>
+        <div id="result"></div>
+      </div>
+  <script src="./base.js" defer></script>
+</body>
+</html>
