@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forecast</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+
+    <header>
+    <span>Місто:</span>
+    <input id="cityInput" />
+    <button onclick="searchCity()">Пошук</button>
+    </header>
+
+
+    <div class="tabs">
+    <div class="tab active" onclick="showTab('today')">Today</div>
+    <div class="tab" onclick="showTab('forecast')">5-day forecast</div>
+    </div>
+
+
+    <div class="content">
+    <div id="today"></div>
+    <div id="forecast" style="display:none"></div>
+    </div>
+
+    <script src="./base.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.users {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.user-btn {
+    padding: 10px;
+    border: 1px solid #999;
+    background: #f8f8f8;
+    cursor: pointer;
+}
+
+.user-btn:hover {
+    background: #eaeaea;
+}
+
+table {
+    border-collapse: collapse;
+    width: 600px;
+    margin-bottom: 10px;
+}
+
+td {
+    border: 1px solid #999;
+    padding: 6px;
+}
+
+#showPostsBtn {
+    width: 600px;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 600px;
+}
+
+.post {
+    border: 1px solid #999;
+    padding: 10px;
+}
